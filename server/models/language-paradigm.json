@@ -1,0 +1,24 @@
+{
+  "name": "LanguageParadigm",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "language": {
+      "type": "belongsTo",
+      "model": "Language",
+      "foreignKey": ""
+    },
+    "paradigm": {
+      "type": "belongsTo",
+      "model": "Paradigm",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

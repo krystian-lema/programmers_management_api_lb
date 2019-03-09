@@ -32,5 +32,9 @@
   "ProgrammerLanguage": {
     "dataSource": "postgres",
     "public": false
+  },
+  "LanguageParadigm": {
+    "dataSource": "postgres",
+    "public": false
   }
 }

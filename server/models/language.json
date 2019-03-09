@@ -15,7 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {}
+  "relations": {
+    "paradigms": {
+      "type": "hasMany",
+      "model": "Paradigm",
+      "foreignKey": "",
+      "through": "LanguageParadigm"
+    }
   },
   "acls": [],
   "methods": {}
