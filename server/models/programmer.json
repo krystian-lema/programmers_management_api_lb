@@ -28,7 +28,8 @@
     "languages": {
       "type": "hasMany",
       "model": "Language",
-      "foreignKey": ""
+      "foreignKey": "",
+      "through": "ProgrammerLanguage"
     }
   },
   "acls": [],

@@ -1,0 +1,24 @@
+{
+  "name": "ProgrammerLanguage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "programmer": {
+      "type": "belongsTo",
+      "model": "Programmer",
+      "foreignKey": ""
+    },
+    "language": {
+      "type": "belongsTo",
+      "model": "Language",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

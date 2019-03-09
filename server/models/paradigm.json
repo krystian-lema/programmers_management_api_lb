@@ -15,12 +15,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "language": {
-      "type": "belongsTo",
-      "model": "Language",
-      "foreignKey": "language_id"
-    }
+  "relations": {}
   },
   "acls": [],
   "methods": {}

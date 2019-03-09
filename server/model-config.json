@@ -28,5 +28,9 @@
   "Paradigm": {
     "dataSource": "postgres",
     "public": true
+  },
+  "ProgrammerLanguage": {
+    "dataSource": "postgres",
+    "public": false
   }
 }

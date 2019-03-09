@@ -15,17 +15,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "programmer": {
-      "type": "belongsTo",
-      "model": "Programmer",
-      "foreignKey": "programmer_id"
-    },
-    "paradigms": {
-      "type": "hasMany",
-      "model": "Paradigm",
-      "foreignKey": ""
-    }
+  "relations": {}
   },
   "acls": [],
   "methods": {}
