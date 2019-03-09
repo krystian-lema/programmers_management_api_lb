@@ -23,5 +23,24 @@
     }
   },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "include_all_data": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "object",
+          "root": true,
+          "description": "List of all teams with related models: programers, languages and paradigms."
+        }
+      ],
+      "description": "Include all related models.",
+      "http": [
+        {
+          "path": "/include_all_data",
+          "verb": "get"
+        }
+      ]
+    }
+  }
 }
