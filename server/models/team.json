@@ -2,11 +2,11 @@
   "name": "Team",
   "base": "PersistedModel",
   "idInjection": true,
-  "http": {
-    "path": "/teams"
-  },
   "options": {
     "validateUpsert": true
+  },
+  "http": {
+    "path": "/teams"
   },
   "properties": {
     "name": {
@@ -15,7 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "programmers": {
+      "type": "hasMany",
+      "model": "Programmer",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

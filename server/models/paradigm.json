@@ -2,11 +2,11 @@
   "name": "Paradigm",
   "base": "PersistedModel",
   "idInjection": true,
-  "http": {
-    "path": "/paradigms"
-  },
   "options": {
     "validateUpsert": true
+  },
+  "http": {
+    "path": "/paradigms"
   },
   "properties": {
     "name": {
@@ -15,7 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "language": {
+      "type": "belongsTo",
+      "model": "Language",
+      "foreignKey": "language_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }

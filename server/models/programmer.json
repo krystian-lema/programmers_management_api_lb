@@ -2,11 +2,11 @@
   "name": "Programmer",
   "base": "PersistedModel",
   "idInjection": true,
-  "http": {
-    "path": "/programmers"
-  },
   "options": {
     "validateUpsert": true
+  },
+  "http": {
+    "path": "/programmers"
   },
   "properties": {
     "firstname": {
@@ -19,7 +19,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "team": {
+      "type": "belongsTo",
+      "model": "Team",
+      "foreignKey": "team_id"
+    },
+    "languages": {
+      "type": "hasMany",
+      "model": "Language",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

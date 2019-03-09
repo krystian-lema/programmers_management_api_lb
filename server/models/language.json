@@ -2,11 +2,11 @@
   "name": "Language",
   "base": "PersistedModel",
   "idInjection": true,
-  "http": {
-    "path": "/languages"
-  },
   "options": {
     "validateUpsert": true
+  },
+  "http": {
+    "path": "/languages"
   },
   "properties": {
     "name": {
@@ -15,7 +15,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "programmer": {
+      "type": "belongsTo",
+      "model": "Programmer",
+      "foreignKey": "programmer_id"
+    },
+    "paradigms": {
+      "type": "hasMany",
+      "model": "Paradigm",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
