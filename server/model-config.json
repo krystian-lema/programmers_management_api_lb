@@ -13,11 +13,11 @@
       "./mixins"
     ]
   },
-  "team": {
+  "Team": {
     "dataSource": "postgres",
     "public": true
   },
-  "programmer": {
+  "Programmer": {
     "dataSource": "postgres",
     "public": true
   },
