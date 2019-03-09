@@ -1,1 +1,12 @@
-{}
+{
+  "postgres": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "programmers_management_api_lb",
+    "password": "admin",
+    "name": "postgres",
+    "user": "admin",
+    "connector": "postgresql"
+  }
+}
