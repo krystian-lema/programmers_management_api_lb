@@ -12,5 +12,21 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "team": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "programmer": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Language": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Paradigm": {
+    "dataSource": "postgres",
+    "public": true
   }
 }

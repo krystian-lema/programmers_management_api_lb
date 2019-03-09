@@ -1,0 +1,21 @@
+{
+  "name": "Paradigm",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "http": {
+    "path": "/paradigms"
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
